@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #f2f2f2;
+}
+
+/* Header */
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#title {
+    color: rgb(129, 7, 21);
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    padding: 10px 25px;
+    border: 1px solid #ccc;
+    background: #eee;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tabs button:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.tabs button:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+.tabs button.active {
+    background: rgb(129, 7, 21);
+    color: white;
+}
+
+/* Center */
+#login-page {
+    display: flex;
+    justify-content: center;
+}
+
+/* Form box */
+.form-box {
+    width: 350px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Labels */
+.form-box label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Inputs */
+.form-box input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box; /* 🔥 fixes overflow */
+}
+
+/* Checkbox alignment */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+/* Fix checkbox size */
+.checkbox-group input {
+    width: auto;
+}
+
+/* Button */
+.form-box button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background: rgb(129, 7, 21);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-box button:hover {
+    background: rgb(100, 5, 15);
+}
+
+/* Hide signup */
+#signup {
+    display: none;
+}

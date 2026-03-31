@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackYourCode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 id="title">TrackYourCode</h1>
+</header>
+
+<!-- Tabs -->
+<div class="tabs">
+    <button class="active" onclick="showLogin()">Login</button>
+    <button onclick="showSignup()">Sign Up</button>
+</div>
+
+<!-- Forms -->
+<div id="login-page">
+
+    <!-- Login -->
+    <div id="login" class="form-box">
+        <label>Username</label>
+        <input type="text">
+
+        <label>Password</label>
+        <input type="password" id="login-pass">
+
+        <div class="checkbox-group">
+            <input type="checkbox" onclick="togglePassword('login-pass')">
+            <label>Show password</label>
+        </div>
+
+        <button>Login</button>
+    </div>
+
+    <!-- Signup -->
+    <div id="signup" class="form-box">
+        <label>Username</label>
+        <input type="text">
+
+        <label>Email</label>
+        <input type="email">
+
+        <label>Password</label>
+        <input type="password" id="signup-pass">
+
+        <label>Retype Password</label>
+        <input type="password">
+
+        <div class="checkbox-group">
+            <input type="checkbox" onclick="togglePassword('signup-pass')">
+            <label>Show password</label>
+        </div>
+
+        <button>Sign Up</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
